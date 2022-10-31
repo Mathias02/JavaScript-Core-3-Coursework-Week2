@@ -23,13 +23,13 @@ const data = 'https://codeyourfuture.herokuapp.com/api/greetings';
 
 fetch(data)
   .then(function (response) {
-    return response.json();
+   return response.text(); 
   })
   .then(function (greeting) {
     // Write the code to display the greeting text here
-     console.log(greeting);
+    greetingTheWorld (greeting);
   });
 
-// const greetingTheWorld = (greet) =>{
-// return greetings.appendChild(greet);
-// }
+const greetingTheWorld = (greet) =>{
+return greetings.innerHTML = `<h1>${greet}</h1>`;
+}
