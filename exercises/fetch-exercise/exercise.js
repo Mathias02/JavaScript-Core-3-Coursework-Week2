@@ -30,6 +30,6 @@ fetch(data)
     greetingTheWorld (greeting);
   });
 
-const greetingTheWorld = (greet) =>{
-return greetings.innerHTML = `<h1>${greet}</h1>`;
-}
+  const greetingTheWorld = (greet) =>{
+    return greetings.innerHTML = `<h1>${greet}</h1>`;
+    }
